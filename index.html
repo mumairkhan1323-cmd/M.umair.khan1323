@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.Umair Khan - Full Stack Developer</title>
+    <title>M.Umair Khan - Full Stack Developer & IT Specialist</title>
     <style>
         * {
             margin: 0;
@@ -151,9 +151,17 @@
         .header .subtitle {
             font-size: 22px;
             color: #5f6368;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             font-weight: 500;
             animation: fadeIn 1s ease-out 0.7s both;
+        }
+
+        .header .location {
+            font-size: 16px;
+            color: #667eea;
+            margin-bottom: 25px;
+            font-weight: 500;
+            animation: fadeIn 1s ease-out 0.8s both;
         }
 
         .header .description {
@@ -217,6 +225,14 @@
             font-weight: 500;
         }
 
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeIn 1s ease-out 1.3s both;
+        }
+
         .cta-button {
             display: inline-block;
             padding: 15px 40px;
@@ -228,12 +244,22 @@
             font-size: 16px;
             transition: all 0.3s ease;
             box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-            animation: fadeIn 1s ease-out 1.3s both;
         }
 
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .cta-button-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .cta-button-secondary:hover {
+            background: #667eea;
+            color: white;
         }
 
         /* Container */
@@ -242,6 +268,109 @@
             margin: 0 auto;
             padding: 80px 20px;
             background: white;
+        }
+
+        /* About Section */
+        .about-section {
+            background: white;
+            padding: 80px 20px;
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #3c4043;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-highlights {
+            display: grid;
+            gap: 20px;
+        }
+
+        .highlight-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .highlight-item h4 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-item p {
+            color: #5f6368;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        /* Services Section */
+        .services-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            padding: 80px 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #667eea;
+            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.3);
+        }
+
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: #202124;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #5f6368;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
         /* Section Titles */
@@ -481,6 +610,184 @@
             font-size: 18px;
         }
 
+        /* Experience Section */
+        .experience-section {
+            background: white;
+            padding: 80px 20px;
+        }
+
+        .timeline {
+            max-width: 900px;
+            margin: 50px auto 0;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-content {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            padding: 30px;
+            border-radius: 16px;
+            width: 45%;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 55%;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: 55%;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 4px solid white;
+            box-shadow: 0 0 0 3px #667eea;
+        }
+
+        .timeline-content h3 {
+            color: #667eea;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content .date {
+            color: #764ba2;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .timeline-content p {
+            color: #3c4043;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        /* Certifications Section */
+        .certifications-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .certifications-section .section-title {
+            color: white;
+            -webkit-text-fill-color: white;
+        }
+
+        .certifications-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 50px auto 0;
+        }
+
+        .cert-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 35px;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: white;
+        }
+
+        .cert-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .cert-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .cert-card p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .contact-item {
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .contact-item-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .contact-item h3 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-item a {
+            color: #3c4043;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .contact-item a:hover {
+            color: #667eea;
+        }
+
         /* Footer */
         footer {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -504,12 +811,42 @@
 
         /* Responsive */
         @media (max-width: 968px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .certifications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-dot {
+                left: 30px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+                margin-left: 80px !important;
+                margin-right: 0 !important;
             }
 
             .stats {
@@ -530,11 +867,19 @@
                 font-size: 32px;
             }
 
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
 
             .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .certifications-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -564,18 +909,15 @@
     <div class="content-wrapper">
         <!-- Header Section -->
         <div class="header">
-            <!-- Profile Picture -->
             <div class="profile-container">
                 <div class="profile-picture">
-                    <img src="banner.jpg" alt="M.Umair Khan">
+                    <img src="profile.png" alt="M.Umair Khan">
                 </div>
             </div>
 
             <h1>M.Umair Khan</h1>
             <p class="subtitle">Full Stack Developer & IT Specialist</p>
-            <p class="description">
-                I'm expert in converting complex business challenges into streamlined digital solutions. From building custom CRMs that automate entire workflows to developing e-commerce platforms that scale, for clients across different industries.
-            </p>
+            <p class="location">📍 Manchester, United Kingdom</p>
             
             <div class="stats">
                 <div class="stat-item">
@@ -587,12 +929,92 @@
                     <span class="stat-label">Custom CRMs</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">7+</span>
+                    <span class="stat-number">6+</span>
                     <span class="stat-label">Years Experience</span>
                 </div>
             </div>
 
-            <a href="mailto:mumair.khan1323@gmail.com" class="cta-button">Get In Touch</a>
+            <div class="cta-buttons">
+                <a href="mailto:mumair.khan1323@gmail.com" class="cta-button">Get In Touch</a>
+                <a href="tel:+447438169522" class="cta-button cta-button-secondary">📞 Call Me</a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Experienced IT Specialist with over 6 years at AK Green Ltd and prior professional experience in Pakistan. I specialize in converting complex business challenges into streamlined digital solutions, from building custom CRMs that automate entire workflows to developing e-commerce platforms that scale.
+                    </p>
+                    <p>
+                        I've successfully led teams of developers and graphic designers, managing projects from concept to deployment. My expertise includes claims management systems, e-commerce platforms, marketing automation, and high-volume data management.
+                    </p>
+                    <p>
+                        Proficient in English communication (IELTS certified), with hands-on experience in hardware setup, IT infrastructure, Google APIs, payment gateways, and various marketing automation tools.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <h4>🎯 Specializations</h4>
+                        <p>Claims Management Systems, E-commerce Solutions, Marketing Automation, CRM Development</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>💼 Leadership</h4>
+                        <p>Led teams of developers and graphic designers, delivering 50+ websites and 20+ bespoke CRMs</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>🚀 Impact</h4>
+                        <p>Implemented workflow automations reducing manual processing by up to 70%</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>🌐 Global Reach</h4>
+                        <p>Worked with clients across multiple industries in UK, UAE, and Pakistan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services-section">
+            <div class="container">
+                <h2 class="section-title">Services I Offer</h2>
+                <p class="section-subtitle">Comprehensive solutions tailored to your business needs</p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h3>Custom CRM Development</h3>
+                        <p>Bespoke CRM systems with claims management, lead tracking, PDF generation, and automated workflows</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛒</div>
+                        <h3>E-commerce Solutions</h3>
+                        <p>Full-featured online stores with inventory management, payment integration, and order tracking</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📧</div>
+                        <h3>Marketing Automation</h3>
+                        <p>Bulk email/SMS campaigns, landing pages, lead capture, and analytics dashboards</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Website Development</h3>
+                        <p>Responsive websites with CMS integration, SEO optimization, and modern design</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>IT Infrastructure</h3>
+                        <p>Hardware setup, troubleshooting, network configuration, and system optimization</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Business Intelligence</h3>
+                        <p>Power BI dashboards, Excel/VBA solutions, data modeling, and performance reporting</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Featured Projects Section -->
@@ -601,7 +1023,6 @@
             <p class="section-subtitle">A showcase of complex systems I've built from concept to deployment</p>
 
             <div class="projects-grid">
-                <!-- Project 1: Noor Al Zahra -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="noor-alzahra.png" alt="Noor Al Zahra">
@@ -622,7 +1043,6 @@
                     </div>
                 </div>
 
-                <!-- Project 2: Sandsford Law -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="sandsford-law.png" alt="Sandsford Law">
@@ -642,7 +1062,6 @@
                     </div>
                 </div>
 
-                <!-- Project 3: Tyler Media -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="tyler-media.png" alt="Tyler Media">
@@ -662,7 +1081,6 @@
                     </div>
                 </div>
 
-                <!-- Project 4: Dignity Complex Care -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="dignity-care.png" alt="Dignity Complex Care">
@@ -682,7 +1100,6 @@
                     </div>
                 </div>
 
-                <!-- Project 5: MRK Immigration -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="mrk-immigration.png" alt="MRK Immigration">
@@ -702,7 +1119,6 @@
                     </div>
                 </div>
 
-                <!-- Project 6: Office Ink -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="office-ink.png" alt="Office Ink">
@@ -793,11 +1209,91 @@
             </div>
         </div>
 
+        <!-- Experience Section -->
+        <div class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>IT Specialist & Web Developer</h3>
+                            <p class="date">AK Green Ltd. | September 2018 - Present</p>
+                            <p>
+                                Leading development of 50+ websites and 20+ custom CRMs. Managing teams of developers and designers, delivering end-to-end solutions including claims management systems, e-commerce platforms, and marketing automation workflows. Integrated Google APIs, payment gateways, and handled millions of data records with high performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>IT Intern</h3>
+                            <p class="date">Xceed Asia Pakistan | October 2017 - September 2018</p>
+                            <p>
+                                Assisted in IT support, system maintenance, website development, and CRM data management. Gained hands-on experience in hardware troubleshooting, network setup, and basic system administration while coordinating with cross-functional teams.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="certifications-section">
+            <h2 class="section-title">Certifications & Education</h2>
+            <p class="section-subtitle">Professional qualifications and continuous learning</p>
+
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>ACCP Pro</h3>
+                    <p>Diploma in Software Engineering<br>Aptech Computer Education | 2015-2018</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📊</div>
+                    <h3>ACCA</h3>
+                    <p>Diploma in Financial & Management Accounting<br>2019-2020</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🌐</div>
+                    <h3>IELTS Certified</h3>
+                    <p>English Language Proficiency<br>Fluent in English and Urdu</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss your next project</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-item-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:mumair.khan1323@gmail.com">mumair.khan1323@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+447438169522">+44 7438 169522</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Manchester, United Kingdom</p>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer>
-            <p style="font-size: 16px; margin-bottom: 15px;">Let's build something amazing together</p>
+            <p style="font-size: 18px; margin-bottom: 20px; font-weight: 600;">Let's build something amazing together</p>
             <p style="margin-bottom: 10px;">
-                <a href="mailto:mumair.khan1323@gmail.com">mumair.khan1323@gmail.com</a>
+                <a href="mailto:mumair.khan1323@gmail.com">mumair.khan1323@gmail.com</a> | 
+                <a href="tel:+447438169522">+44 7438 169522</a>
             </p>
             <p style="margin-top: 30px; opacity: 0.8;">&copy; 2026 M.Umair Khan. All rights reserved.</p>
         </footer>
