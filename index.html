@@ -266,14 +266,14 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding: 60px 20px;
             background: white;
         }
 
         /* About Section */
         .about-section {
             background: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
         }
 
         .about-content {
@@ -281,12 +281,12 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 50px;
             align-items: start;
         }
 
         .about-text h2 {
-            font-size: 42px;
+            font-size: 38px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -297,86 +297,90 @@
 
         .about-text p {
             color: #3c4043;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 1.8;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .about-highlights {
             display: grid;
-            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
         }
 
         .highlight-item {
             background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 4px solid #667eea;
+            padding: 16px;
+            border-radius: 10px;
+            border-left: 3px solid #667eea;
         }
 
         .highlight-item h4 {
             color: #667eea;
-            font-size: 18px;
-            margin-bottom: 8px;
+            font-size: 15px;
+            margin-bottom: 6px;
         }
 
         .highlight-item p {
             color: #5f6368;
-            font-size: 14px;
+            font-size: 13px;
             margin: 0;
+            line-height: 1.5;
         }
 
-        /* Services Section */
+        /* Services Section - COMPACT MODERN DESIGN */
         .services-section {
             background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
-            padding: 80px 20px;
+            padding: 60px 20px;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
             max-width: 1200px;
-            margin: 50px auto 0;
+            margin: 30px auto 0;
         }
 
         .service-card {
             background: white;
-            padding: 40px 30px;
-            border-radius: 16px;
+            padding: 24px 20px;
+            border-radius: 12px;
             text-align: center;
-            transition: all 0.4s ease;
-            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border: 1px solid #e8e8e8;
         }
 
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             border-color: #667eea;
-            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
         }
 
         .service-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 32px;
+            margin-bottom: 12px;
+            display: block;
         }
 
         .service-card h3 {
             color: #202124;
-            font-size: 22px;
-            margin-bottom: 15px;
+            font-size: 15px;
+            margin-bottom: 8px;
             font-weight: 600;
         }
 
         .service-card p {
             color: #5f6368;
-            font-size: 15px;
-            line-height: 1.6;
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 0;
         }
 
         /* Section Titles */
         .section-title {
-            font-size: 42px;
-            margin-bottom: 10px;
+            font-size: 36px;
+            margin-bottom: 8px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -387,8 +391,8 @@
 
         .section-subtitle {
             color: #5f6368;
-            margin-bottom: 60px;
-            font-size: 18px;
+            margin-bottom: 30px;
+            font-size: 16px;
             text-align: center;
         }
 
@@ -396,16 +400,16 @@
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 35px;
-            margin-top: 40px;
+            gap: 25px;
+            margin-top: 30px;
         }
 
         .project-card {
             background: white;
-            border-radius: 16px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
             opacity: 0;
             animation: fadeInUp 0.6s ease-out forwards;
         }
@@ -420,7 +424,7 @@
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(40px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -429,13 +433,13 @@
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 50px rgba(102, 126, 234, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(102, 126, 234, 0.25);
         }
 
         .project-image {
             width: 100%;
-            height: 220px;
+            height: 180px;
             overflow: hidden;
             position: relative;
         }
@@ -468,44 +472,38 @@
         }
 
         .project-content {
-            padding: 28px;
+            padding: 20px;
         }
 
         .project-content h3 {
-            font-size: 24px;
+            font-size: 18px;
             color: #202124;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
             font-weight: 600;
         }
 
         .project-content p {
             color: #5f6368;
-            margin-bottom: 20px;
-            line-height: 1.7;
-            font-size: 14px;
+            margin-bottom: 14px;
+            line-height: 1.6;
+            font-size: 13px;
         }
 
         .project-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 6px;
+            margin-bottom: 14px;
         }
 
         .tag {
             display: inline-block;
-            padding: 6px 14px;
+            padding: 4px 10px;
             background: linear-gradient(135deg, #e8f0fe 0%, #f3e8ff 100%);
             color: #667eea;
-            border-radius: 20px;
-            font-size: 12px;
+            border-radius: 15px;
+            font-size: 11px;
             font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .tag:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
         }
 
         .project-link {
@@ -513,92 +511,78 @@
             align-items: center;
             color: #667eea;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             transition: all 0.3s ease;
         }
 
         .project-link:hover {
             color: #764ba2;
-            transform: translateX(5px);
         }
 
         .project-link::after {
             content: " →";
-            margin-left: 6px;
-            transition: margin-left 0.3s ease;
+            margin-left: 4px;
         }
 
-        .project-link:hover::after {
-            margin-left: 10px;
-        }
-
-        /* Skills Section */
+        /* Skills Section - COMPACT MODERN DESIGN */
         .skills-section {
             background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
-            padding: 80px 0;
+            padding: 60px 20px;
+        }
+
+        .skills-container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 50px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 20px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 30px;
         }
 
         .skill-card {
             background: white;
-            padding: 32px;
-            border-radius: 16px;
-            border: 2px solid transparent;
-            transition: all 0.4s ease;
-            opacity: 0;
-            animation: fadeInUp 0.6s ease-out forwards;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e8e8e8;
+            transition: all 0.3s ease;
         }
 
-        .skill-card:nth-child(1) { animation-delay: 0.1s; }
-        .skill-card:nth-child(2) { animation-delay: 0.2s; }
-        .skill-card:nth-child(3) { animation-delay: 0.3s; }
-        .skill-card:nth-child(4) { animation-delay: 0.4s; }
-        .skill-card:nth-child(5) { animation-delay: 0.5s; }
-        .skill-card:nth-child(6) { animation-delay: 0.6s; }
-
         .skill-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             border-color: #667eea;
-            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.2);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
         }
 
         .skill-card h3 {
             color: #667eea;
-            font-size: 20px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
+            font-size: 14px;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
             font-weight: 600;
         }
 
         .skill-card ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         .skill-card li {
-            padding: 10px 0;
+            padding: 5px 0;
             color: #3c4043;
             position: relative;
-            padding-left: 28px;
-            font-size: 15px;
-            transition: all 0.3s ease;
+            padding-left: 18px;
+            font-size: 12px;
+            transition: all 0.2s ease;
         }
 
         .skill-card li:hover {
             color: #667eea;
-            transform: translateX(5px);
         }
 
         .skill-card li:before {
@@ -607,18 +591,18 @@
             left: 0;
             color: #667eea;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 11px;
         }
 
         /* Experience Section */
         .experience-section {
             background: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
         }
 
         .timeline {
             max-width: 900px;
-            margin: 50px auto 0;
+            margin: 40px auto 0;
             position: relative;
         }
 
@@ -633,14 +617,14 @@
         }
 
         .timeline-item {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             position: relative;
         }
 
         .timeline-content {
             background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
-            padding: 30px;
-            border-radius: 16px;
+            padding: 24px;
+            border-radius: 12px;
             width: 45%;
             position: relative;
         }
@@ -656,39 +640,39 @@
         .timeline-dot {
             position: absolute;
             left: 50%;
-            top: 30px;
+            top: 24px;
             transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             border-radius: 50%;
             background: #667eea;
-            border: 4px solid white;
+            border: 3px solid white;
             box-shadow: 0 0 0 3px #667eea;
         }
 
         .timeline-content h3 {
             color: #667eea;
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 20px;
+            margin-bottom: 8px;
         }
 
         .timeline-content .date {
             color: #764ba2;
             font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 15px;
+            font-size: 13px;
+            margin-bottom: 12px;
         }
 
         .timeline-content p {
             color: #3c4043;
-            line-height: 1.7;
-            font-size: 15px;
+            line-height: 1.6;
+            font-size: 14px;
         }
 
         /* Certifications Section */
         .certifications-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 80px 20px;
+            padding: 60px 20px;
             color: white;
         }
 
@@ -704,84 +688,86 @@
         .certifications-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            max-width: 1200px;
-            margin: 50px auto 0;
+            gap: 20px;
+            max-width: 900px;
+            margin: 30px auto 0;
         }
 
         .cert-card {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            padding: 35px;
-            border-radius: 16px;
+            padding: 28px;
+            border-radius: 12px;
             text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
         }
 
         .cert-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.15);
             border-color: white;
         }
 
         .cert-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
+            font-size: 36px;
+            margin-bottom: 14px;
         }
 
         .cert-card h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
+            font-size: 18px;
+            margin-bottom: 8px;
         }
 
         .cert-card p {
-            font-size: 14px;
+            font-size: 13px;
             opacity: 0.9;
+            line-height: 1.5;
         }
 
         /* Contact Section */
         .contact-section {
             background: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
         .contact-info {
-            max-width: 800px;
-            margin: 50px auto 0;
+            max-width: 700px;
+            margin: 30px auto 0;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
+            gap: 20px;
         }
 
         .contact-item {
-            padding: 30px;
+            padding: 24px 16px;
             background: linear-gradient(135deg, #f8f9fa 0%, #e8f0fe 100%);
-            border-radius: 16px;
+            border-radius: 12px;
             transition: all 0.3s ease;
         }
 
         .contact-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
         }
 
         .contact-item-icon {
-            font-size: 36px;
-            margin-bottom: 15px;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
 
         .contact-item h3 {
             color: #667eea;
-            font-size: 18px;
-            margin-bottom: 10px;
+            font-size: 15px;
+            margin-bottom: 8px;
         }
 
-        .contact-item a {
+        .contact-item a, .contact-item p {
             color: #3c4043;
             text-decoration: none;
-            font-size: 15px;
+            font-size: 13px;
+            margin: 0;
         }
 
         .contact-item a:hover {
@@ -792,7 +778,7 @@
         footer {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
             color: white;
             font-size: 14px;
         }
@@ -810,9 +796,22 @@
         }
 
         /* Responsive */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         @media (max-width: 968px) {
             .about-content {
                 grid-template-columns: 1fr;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr 1fr;
             }
 
             .services-grid {
@@ -828,7 +827,7 @@
             }
 
             .certifications-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .contact-info {
@@ -836,16 +835,16 @@
             }
 
             .timeline::before {
-                left: 30px;
+                left: 20px;
             }
 
             .timeline-dot {
-                left: 30px;
+                left: 20px;
             }
 
             .timeline-content {
-                width: calc(100% - 80px);
-                margin-left: 80px !important;
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
                 margin-right: 0 !important;
             }
 
@@ -860,15 +859,32 @@
 
         @media (max-width: 640px) {
             .header h1 {
-                font-size: 36px;
-            }
-
-            .section-title {
                 font-size: 32px;
             }
 
+            .section-title {
+                font-size: 28px;
+            }
+
             .services-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .service-card {
+                padding: 18px 14px;
+            }
+
+            .service-icon {
+                font-size: 26px;
+            }
+
+            .service-card h3 {
+                font-size: 13px;
+            }
+
+            .service-card p {
+                font-size: 11px;
             }
 
             .projects-grid {
@@ -876,10 +892,19 @@
             }
 
             .skills-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .skill-card {
+                padding: 16px;
             }
 
             .certifications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-highlights {
                 grid-template-columns: 1fr;
             }
 
@@ -916,7 +941,7 @@
             </div>
 
             <h1>M.Umair Khan</h1>
-            <p class="subtitle">Full Stack Developer & IT Specialist</p>
+            <p class="subtitle">Full Stack Developer & E-commerce Specialist</p>
             <p class="location">📍 Manchester, United Kingdom</p>
             
             <div class="stats">
@@ -946,31 +971,31 @@
                 <div class="about-text">
                     <h2>About Me</h2>
                     <p>
-                        Experienced IT Specialist with over 6 years at AK Green Ltd and prior professional experience in Pakistan. I specialize in converting complex business challenges into streamlined digital solutions, from building custom CRMs that automate entire workflows to developing e-commerce platforms that scale.
+                        Experienced IT Specialist with over 6 years at AK Green Ltd and prior professional experience in Pakistan. I specialize in converting complex business challenges into streamlined digital solutions, from building custom CRMs to developing e-commerce platforms that scale.
                     </p>
                     <p>
-                        I've successfully led teams of developers and graphic designers, managing projects from concept to deployment. My expertise includes claims management systems, e-commerce platforms, marketing automation, and high-volume data management.
+                        Expertise spans Amazon Seller Central account setup, eBay store management, Shopify optimization, and PPC campaign management across multiple advertising platforms. I've led teams of developers and designers, managing projects from concept to deployment.
                     </p>
                     <p>
-                        Proficient in English communication (IELTS certified), with hands-on experience in hardware setup, IT infrastructure, Google APIs, payment gateways, and various marketing automation tools.
+                        Proficient in English (IELTS certified), with hands-on experience in IT infrastructure, Google APIs, payment gateways, and marketing automation tools.
                     </p>
                 </div>
                 <div class="about-highlights">
                     <div class="highlight-item">
                         <h4>🎯 Specializations</h4>
-                        <p>Claims Management Systems, E-commerce Solutions, Marketing Automation, CRM Development</p>
+                        <p>Claims Management, E-commerce, CRM Development, Marketplace Management</p>
                     </div>
                     <div class="highlight-item">
                         <h4>💼 Leadership</h4>
-                        <p>Led teams of developers and graphic designers, delivering 50+ websites and 20+ bespoke CRMs</p>
+                        <p>Led teams delivering 50+ websites and 20+ bespoke CRMs</p>
                     </div>
                     <div class="highlight-item">
-                        <h4>🚀 Impact</h4>
-                        <p>Implemented workflow automations reducing manual processing by up to 70%</p>
+                        <h4>🛒 E-commerce</h4>
+                        <p>Amazon FBA, eBay Seller Hub, Shopify, TikTok Shop</p>
                     </div>
                     <div class="highlight-item">
-                        <h4>🌐 Global Reach</h4>
-                        <p>Worked with clients across multiple industries in UK, UAE, and Pakistan</p>
+                        <h4>📈 Advertising</h4>
+                        <p>Amazon PPC, Google Ads, Meta Ads, Promoted Listings</p>
                     </div>
                 </div>
             </div>
@@ -984,34 +1009,44 @@
 
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">🎨</div>
+                        <span class="service-icon">🎨</span>
                         <h3>Custom CRM Development</h3>
-                        <p>Bespoke CRM systems with claims management, lead tracking, PDF generation, and automated workflows</p>
+                        <p>Bespoke CRM systems with claims management, lead tracking & automated workflows</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🛒</div>
+                        <span class="service-icon">🛒</span>
                         <h3>E-commerce Solutions</h3>
-                        <p>Full-featured online stores with inventory management, payment integration, and order tracking</p>
+                        <p>Shopify, WooCommerce & custom stores with payment integration</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">📧</div>
+                        <span class="service-icon">📦</span>
+                        <h3>Amazon Seller Services</h3>
+                        <p>Seller Central setup, FBA management, listing optimization & A+ Content</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">🏷️</span>
+                        <h3>eBay Store Management</h3>
+                        <p>Seller Hub setup, listing optimization & promoted listings management</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">💎</span>
+                        <h3>Shopify Optimization</h3>
+                        <p>Theme customization, app integration, conversion rate optimization</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">📈</span>
+                        <h3>PPC & Ads Management</h3>
+                        <p>Amazon PPC, Google Ads, Meta Ads & marketplace advertising</p>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-icon">📧</span>
                         <h3>Marketing Automation</h3>
-                        <p>Bulk email/SMS campaigns, landing pages, lead capture, and analytics dashboards</p>
+                        <p>Email/SMS campaigns, lead capture & analytics dashboards</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">💻</div>
+                        <span class="service-icon">💻</span>
                         <h3>Website Development</h3>
-                        <p>Responsive websites with CMS integration, SEO optimization, and modern design</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">⚙️</div>
-                        <h3>IT Infrastructure</h3>
-                        <p>Hardware setup, troubleshooting, network configuration, and system optimization</p>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">📊</div>
-                        <h3>Business Intelligence</h3>
-                        <p>Power BI dashboards, Excel/VBA solutions, data modeling, and performance reporting</p>
+                        <p>Responsive websites with CMS, SEO optimization & modern design</p>
                     </div>
                 </div>
             </div>
@@ -1030,14 +1065,13 @@
                     <div class="project-content">
                         <h3>Noor Al Zahra Tourism</h3>
                         <p>
-                            Luxury chauffeur booking system with customer dashboards, invoicing, company & vehicle performance reporting, full accounting module, Google Maps API integration, and multiple payment gateways (Stripe, Worldpay).
+                            Luxury chauffeur booking with customer dashboards, invoicing, Google Maps API & payment gateways (Stripe, Worldpay).
                         </p>
                         <div class="project-tags">
                             <span class="tag">Laravel</span>
                             <span class="tag">MySQL</span>
-                            <span class="tag">Google Maps API</span>
-                            <span class="tag">Payment Integration</span>
-                            <span class="tag">CRM</span>
+                            <span class="tag">Google Maps</span>
+                            <span class="tag">Stripe</span>
                         </div>
                         <a href="https://noor-alzahra.ae/" target="_blank" class="project-link">View Live Site</a>
                     </div>
@@ -1050,13 +1084,12 @@
                     <div class="project-content">
                         <h3>Sandsford Law</h3>
                         <p>
-                            Legal services website with integrated CRM system featuring end-to-end claim workflow, automated PDF generation, client communication automation, and comprehensive case management.
+                            Legal services with integrated CRM featuring end-to-end claim workflow, automated PDF generation & client communication.
                         </p>
                         <div class="project-tags">
                             <span class="tag">WordPress</span>
                             <span class="tag">Custom CRM</span>
                             <span class="tag">PDF Generation</span>
-                            <span class="tag">Automation</span>
                         </div>
                         <a href="https://sandsfordlaw.co.uk/" target="_blank" class="project-link">View Live Site</a>
                     </div>
@@ -1069,13 +1102,12 @@
                     <div class="project-content">
                         <h3>Tyler Media</h3>
                         <p>
-                            Digital marketing agency website with integrated analytics dashboards, reporting systems, campaign tracking, and performance monitoring for multiple client campaigns.
+                            Digital marketing agency with integrated analytics dashboards, campaign tracking & performance monitoring.
                         </p>
                         <div class="project-tags">
                             <span class="tag">WordPress</span>
                             <span class="tag">Analytics</span>
                             <span class="tag">Reporting</span>
-                            <span class="tag">Marketing Tools</span>
                         </div>
                         <a href="https://tylerhmedia.com/" target="_blank" class="project-link">View Live Site</a>
                     </div>
@@ -1088,12 +1120,11 @@
                     <div class="project-content">
                         <h3>Dignity Complex Care</h3>
                         <p>
-                            Healthcare provider website with custom CRM for staff management, claim tracking, patient care coordination, and comprehensive reporting dashboards for care providers.
+                            Healthcare provider with custom CRM for staff management, claim tracking & comprehensive reporting dashboards.
                         </p>
                         <div class="project-tags">
                             <span class="tag">WordPress</span>
                             <span class="tag">Custom CRM</span>
-                            <span class="tag">Staff Management</span>
                             <span class="tag">Healthcare</span>
                         </div>
                         <a href="https://www.dignitycomplexcare.co.uk/" target="_blank" class="project-link">View Live Site</a>
@@ -1107,12 +1138,11 @@
                     <div class="project-content">
                         <h3>MRK Immigration</h3>
                         <p>
-                            Immigration case management system with automated document generation, client portal, workflow automation, claim tracking, and comprehensive reporting for immigration services.
+                            Immigration case management with automated document generation, client portal & workflow automation.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Laravel</span>
                             <span class="tag">CRM</span>
-                            <span class="tag">Document Automation</span>
                             <span class="tag">Client Portal</span>
                         </div>
                         <a href="https://mrkimmigration.co.uk/" target="_blank" class="project-link">View Live Site</a>
@@ -1126,12 +1156,12 @@
                     <div class="project-content">
                         <h3>Office Ink</h3>
                         <p>
-                            Full-featured e-commerce platform for office supplies with extensive product catalog, inventory management, customer accounts, order tracking, and integrated payment solutions.
+                            Full-featured e-commerce for office supplies with inventory management, customer accounts & order tracking.
                         </p>
                         <div class="project-tags">
                             <span class="tag">WordPress</span>
-                            <span class="tag">E-Commerce</span>
-                            <span class="tag">Inventory System</span>
+                            <span class="tag">WooCommerce</span>
+                            <span class="tag">Inventory</span>
                         </div>
                         <a href="https://officeink.uk/" target="_blank" class="project-link">View Live Site</a>
                     </div>
@@ -1141,7 +1171,7 @@
 
         <!-- Skills & Expertise Section -->
         <div class="skills-section">
-            <div class="container">
+            <div class="skills-container">
                 <h2 class="section-title">Skills & Expertise</h2>
                 <p class="section-subtitle">Technologies and tools I work with daily</p>
 
@@ -1167,12 +1197,32 @@
                     </div>
 
                     <div class="skill-card">
-                        <h3>CMS & E-commerce</h3>
+                        <h3>E-commerce Platforms</h3>
                         <ul>
-                            <li>WordPress</li>
-                            <li>Shopify & WooCommerce</li>
-                            <li>Wix & TikTok Shop</li>
-                            <li>Custom Solutions</li>
+                            <li>Shopify & Liquid</li>
+                            <li>WooCommerce</li>
+                            <li>Wix & Squarespace</li>
+                            <li>TikTok Shop</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Marketplace Management</h3>
+                        <ul>
+                            <li>Amazon Seller Central</li>
+                            <li>Amazon FBA & FBM</li>
+                            <li>eBay Seller Hub</li>
+                            <li>Product Listing Optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Advertising & PPC</h3>
+                        <ul>
+                            <li>Amazon PPC (Sponsored Ads)</li>
+                            <li>eBay Promoted Listings</li>
+                            <li>Google Ads & Meta Ads</li>
+                            <li>Campaign Optimization</li>
                         </ul>
                     </div>
 
@@ -1180,8 +1230,8 @@
                         <h3>Integrations & APIs</h3>
                         <ul>
                             <li>Google Maps, Calendar, Drive</li>
-                            <li>Payment Gateways (Stripe, PayPal, Worldpay)</li>
-                            <li>Marketing Tools (Mailchimp, SendX.io)</li>
+                            <li>Stripe, PayPal, Worldpay</li>
+                            <li>Mailchimp, SendX.io</li>
                             <li>Third-party API Integration</li>
                         </ul>
                     </div>
@@ -1200,9 +1250,9 @@
                         <h3>Automation & Workflows</h3>
                         <ul>
                             <li>PDF Generation Systems</li>
-                            <li>Email/SMS Campaign Automation</li>
-                            <li>Lead Tracking & Management</li>
-                            <li>Invoice & Reporting Automation</li>
+                            <li>Email/SMS Automation</li>
+                            <li>Lead Tracking & CRM</li>
+                            <li>Invoice Automation</li>
                         </ul>
                     </div>
                 </div>
@@ -1222,7 +1272,7 @@
                             <h3>IT Specialist & Web Developer</h3>
                             <p class="date">AK Green Ltd. | September 2018 - Present</p>
                             <p>
-                                Leading development of 50+ websites and 20+ custom CRMs. Managing teams of developers and designers, delivering end-to-end solutions including claims management systems, e-commerce platforms, and marketing automation workflows. Integrated Google APIs, payment gateways, and handled millions of data records with high performance.
+                                Leading development of 50+ websites and 20+ custom CRMs. Managing Amazon Seller Central accounts, eBay stores, and Shopify optimization. Handling PPC campaigns across Amazon Advertising Console, eBay Promoted Listings, and Google Ads. Integrated payment gateways and managed high-volume data systems.
                             </p>
                         </div>
                     </div>
@@ -1232,7 +1282,7 @@
                             <h3>IT Intern</h3>
                             <p class="date">Xceed Asia Pakistan | October 2017 - September 2018</p>
                             <p>
-                                Assisted in IT support, system maintenance, website development, and CRM data management. Gained hands-on experience in hardware troubleshooting, network setup, and basic system administration while coordinating with cross-functional teams.
+                                Assisted in IT support, system maintenance, website development, and CRM data management. Gained hands-on experience in hardware troubleshooting, network setup, and basic system administration.
                             </p>
                         </div>
                     </div>
@@ -1290,12 +1340,12 @@
 
         <!-- Footer -->
         <footer>
-            <p style="font-size: 18px; margin-bottom: 20px; font-weight: 600;">Let's build something amazing together</p>
-            <p style="margin-bottom: 10px;">
+            <p style="font-size: 16px; margin-bottom: 15px; font-weight: 600;">Let's build something amazing together</p>
+            <p style="margin-bottom: 8px;">
                 <a href="mailto:mumair.khan1323@gmail.com">mumair.khan1323@gmail.com</a> | 
                 <a href="tel:+447438169522">+44 7438 169522</a>
             </p>
-            <p style="margin-top: 30px; opacity: 0.8;">&copy; 2026 M.Umair Khan. All rights reserved.</p>
+            <p style="margin-top: 20px; opacity: 0.8;">&copy; 2025 M.Umair Khan. All rights reserved.</p>
         </footer>
     </div>
 </body>
